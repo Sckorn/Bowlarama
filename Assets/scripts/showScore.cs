@@ -4,14 +4,14 @@ using System.Collections;
 public class showScore : MonoBehaviour {
     void OnMouseOver()
     {
-        guiText.fontStyle = FontStyle.Italic;
-        guiText.material.color = Color.black;
+        GetComponent<GUIText>().fontStyle = FontStyle.Italic;
+        GetComponent<GUIText>().material.color = Color.black;
     }
 
     void OnMouseExit()
     {
-        guiText.fontStyle = FontStyle.Normal;
-        guiText.material.color = Color.white;
+        GetComponent<GUIText>().fontStyle = FontStyle.Normal;
+        GetComponent<GUIText>().material.color = Color.white;
     }
 	// Use this for initialization
 	void Start () {
